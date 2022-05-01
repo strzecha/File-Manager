@@ -1,0 +1,4 @@
+permissions: -rw-r--r--
+bad-characters: : $ ,
+substitute: _
+temporary-extensions: .temp
