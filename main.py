@@ -19,7 +19,7 @@ def main():
     parser.add_argument("--bad_keep", dest="b_keep", action="store_true")
     parser.add_argument("--perm_change", dest="p_change", action="store_true")
     parser.add_argument("--perm_keep", dest="p_keep", action="store_true")
-    parser.add_argument("--same_action", dest="s_action", choices=['old', 'new', 'both'])
+    parser.add_argument("--same_action", dest="s_action", choices=['old', 'new', 'none'])
 
     args = parser.parse_args()
     path = args.main_path
