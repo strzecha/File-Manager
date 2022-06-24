@@ -1,5 +1,4 @@
 # File Manager
-
 Project for subject "ASU": Warsaw University of Technology
 
 Program do porządkowania plików w systemie Linux. Ma on za zadanie przeszukać główny katalog X razem z jego podkatalogami, oraz inne katalogi Y1, Y2, ... wraz z ich podkatalogami (o podobnej strukturze), a następnie uporządkować te katalogi w następujący sposób:
@@ -52,3 +51,9 @@ W pliku config/clean_files znajduje się modyfikowalna konfiguracja programu tj.
 - bad-characters: kłopotliwe znaki w nazwach plików
 - substitute: substytut znaków kłopotliwych
 - temporary-extensions: dodatkowe (do standardowych *.tmp i *~) rozszerzenia plików uznawanych tymczasowych
+
+## Testy
+Żeby uruchomić testy należy zainstalować pakiet pytest (za pomocą narzędzia pip3)
+
+## Dokumentacja
+W folderze doc/html znajduje się dokumentacja doxygen w formacie html (plik index.html)
