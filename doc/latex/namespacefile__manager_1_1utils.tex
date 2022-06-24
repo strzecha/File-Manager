@@ -1,0 +1,193 @@
+\hypertarget{namespacefile__manager_1_1utils}{}\doxysection{file\+\_\+manager.\+utils Namespace Reference}
+\label{namespacefile__manager_1_1utils}\index{file\_manager.utils@{file\_manager.utils}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacefile__manager_1_1utils_abcd6842367ef8ea42c42b3ea0067059c}{file\+\_\+size}} (filename)
+\item 
+def \mbox{\hyperlink{namespacefile__manager_1_1utils_a52b27d0df56a33017b268bab1937b9a7}{extension\+\_\+of}} (filename)
+\item 
+def \mbox{\hyperlink{namespacefile__manager_1_1utils_ab08a4db8f8688c26b490d55d16e1e653}{perm\+\_\+to\+\_\+num}} (perm)
+\item 
+def \mbox{\hyperlink{namespacefile__manager_1_1utils_a3be2ad3f85db15a5dfd4bc85c8fd198d}{fill\+\_\+directory}} (path, bad\+\_\+characters, temp\+\_\+extensions, num\+\_\+of\+\_\+files=20)
+\item 
+def \mbox{\hyperlink{namespacefile__manager_1_1utils_a6af4a413af87930902142d68bf61cfa5}{prepare\+\_\+files}} (path, bad\+\_\+characters, temp\+\_\+extensions, num\+\_\+of\+\_\+copy\+\_\+dirs=1)
+\item 
+def \mbox{\hyperlink{namespacefile__manager_1_1utils_a0fa8eba310a486505107ccf991858bb4}{prepare\+\_\+subfiles}} (path, bad\+\_\+characters, temp\+\_\+extensions, num\+\_\+of\+\_\+copy\+\_\+dirs=1)
+\item 
+def \mbox{\hyperlink{namespacefile__manager_1_1utils_a88f46d69266137bfcc1fbd4f8c31a44c}{get\+\_\+files}} (path)
+\item 
+def \mbox{\hyperlink{namespacefile__manager_1_1utils_a7540e379f43630f0b956980748188924}{get\+\_\+all\+\_\+files}} (path, copy\+\_\+paths=None)
+\item 
+def \mbox{\hyperlink{namespacefile__manager_1_1utils_a5a8869ea27c5383c117ac8849ac48d13}{move\+\_\+files\+\_\+to\+\_\+main\+\_\+dir}} (main\+\_\+dir\+\_\+path, copy\+\_\+paths)
+\item 
+def \mbox{\hyperlink{namespacefile__manager_1_1utils_a58bdd861b24fdd7a56bd068c1486c075}{generate\+\_\+unique\+\_\+filename}} (filename, main\+\_\+dir\+\_\+path, copy\+\_\+path)
+\item 
+def \mbox{\hyperlink{namespacefile__manager_1_1utils_add4603c0e7494069c81c9598477fc2cc}{load\+\_\+configuration}} (conf\+\_\+path)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}module utils 
+
+Some useful functions for running the program and testing (for examle: create testing directory tree)
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacefile__manager_1_1utils_a52b27d0df56a33017b268bab1937b9a7}\label{namespacefile__manager_1_1utils_a52b27d0df56a33017b268bab1937b9a7}} 
+\index{file\_manager.utils@{file\_manager.utils}!extension\_of@{extension\_of}}
+\index{extension\_of@{extension\_of}!file\_manager.utils@{file\_manager.utils}}
+\doxysubsubsection{\texorpdfstring{extension\_of()}{extension\_of()}}
+{\footnotesize\ttfamily def file\+\_\+manager.\+utils.\+extension\+\_\+of (\begin{DoxyParamCaption}\item[{}]{filename }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function to get extension of file
+
+Args:
+    filename (str): name of file
+
+Returns:
+    str: extension of file
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacefile__manager_1_1utils_abcd6842367ef8ea42c42b3ea0067059c}\label{namespacefile__manager_1_1utils_abcd6842367ef8ea42c42b3ea0067059c}} 
+\index{file\_manager.utils@{file\_manager.utils}!file\_size@{file\_size}}
+\index{file\_size@{file\_size}!file\_manager.utils@{file\_manager.utils}}
+\doxysubsubsection{\texorpdfstring{file\_size()}{file\_size()}}
+{\footnotesize\ttfamily def file\+\_\+manager.\+utils.\+file\+\_\+size (\begin{DoxyParamCaption}\item[{}]{filename }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function to get size of file
+
+Args:
+    filename (str): name of file
+
+Returns:
+    int: size of file
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacefile__manager_1_1utils_a3be2ad3f85db15a5dfd4bc85c8fd198d}\label{namespacefile__manager_1_1utils_a3be2ad3f85db15a5dfd4bc85c8fd198d}} 
+\index{file\_manager.utils@{file\_manager.utils}!fill\_directory@{fill\_directory}}
+\index{fill\_directory@{fill\_directory}!file\_manager.utils@{file\_manager.utils}}
+\doxysubsubsection{\texorpdfstring{fill\_directory()}{fill\_directory()}}
+{\footnotesize\ttfamily def file\+\_\+manager.\+utils.\+fill\+\_\+directory (\begin{DoxyParamCaption}\item[{}]{path,  }\item[{}]{bad\+\_\+characters,  }\item[{}]{temp\+\_\+extensions,  }\item[{}]{num\+\_\+of\+\_\+files = {\ttfamily 20} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function to fill directory with testing files
+
+Args:
+    path (str): path to directory
+    bad_characters (set(str)): wrong characters in names of files
+    temp_extensions (set(str)): temporary extensions of files
+    num_of_files (int, optional): Number of generated files. Defaults to 20.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacefile__manager_1_1utils_a58bdd861b24fdd7a56bd068c1486c075}\label{namespacefile__manager_1_1utils_a58bdd861b24fdd7a56bd068c1486c075}} 
+\index{file\_manager.utils@{file\_manager.utils}!generate\_unique\_filename@{generate\_unique\_filename}}
+\index{generate\_unique\_filename@{generate\_unique\_filename}!file\_manager.utils@{file\_manager.utils}}
+\doxysubsubsection{\texorpdfstring{generate\_unique\_filename()}{generate\_unique\_filename()}}
+{\footnotesize\ttfamily def file\+\_\+manager.\+utils.\+generate\+\_\+unique\+\_\+filename (\begin{DoxyParamCaption}\item[{}]{filename,  }\item[{}]{main\+\_\+dir\+\_\+path,  }\item[{}]{copy\+\_\+path }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function to generate unique (in main directory) name of file from copy directory
+
+Args:
+    filename (str): proposed file name
+    main_dir_path (str): path to main directory
+    copy_path (str): path to copy directory
+
+Returns:
+    str: unique file name
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacefile__manager_1_1utils_a7540e379f43630f0b956980748188924}\label{namespacefile__manager_1_1utils_a7540e379f43630f0b956980748188924}} 
+\index{file\_manager.utils@{file\_manager.utils}!get\_all\_files@{get\_all\_files}}
+\index{get\_all\_files@{get\_all\_files}!file\_manager.utils@{file\_manager.utils}}
+\doxysubsubsection{\texorpdfstring{get\_all\_files()}{get\_all\_files()}}
+{\footnotesize\ttfamily def file\+\_\+manager.\+utils.\+get\+\_\+all\+\_\+files (\begin{DoxyParamCaption}\item[{}]{path,  }\item[{}]{copy\+\_\+paths = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function to get all files' names from main and copy directories (Y1, Y2,...) and their subdirectories
+
+Args:
+    path (str): path to main directory
+    copy_paths (list(str), optional): paths to copy directories. Defaults to None.
+
+Returns:
+    list(str): list of all files' names
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacefile__manager_1_1utils_a88f46d69266137bfcc1fbd4f8c31a44c}\label{namespacefile__manager_1_1utils_a88f46d69266137bfcc1fbd4f8c31a44c}} 
+\index{file\_manager.utils@{file\_manager.utils}!get\_files@{get\_files}}
+\index{get\_files@{get\_files}!file\_manager.utils@{file\_manager.utils}}
+\doxysubsubsection{\texorpdfstring{get\_files()}{get\_files()}}
+{\footnotesize\ttfamily def file\+\_\+manager.\+utils.\+get\+\_\+files (\begin{DoxyParamCaption}\item[{}]{path }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function to get all files' names from main directory and its subdirectories
+
+Args:
+    path (str): path to main directory
+
+Returns:
+    list(str): list of all files' names
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacefile__manager_1_1utils_add4603c0e7494069c81c9598477fc2cc}\label{namespacefile__manager_1_1utils_add4603c0e7494069c81c9598477fc2cc}} 
+\index{file\_manager.utils@{file\_manager.utils}!load\_configuration@{load\_configuration}}
+\index{load\_configuration@{load\_configuration}!file\_manager.utils@{file\_manager.utils}}
+\doxysubsubsection{\texorpdfstring{load\_configuration()}{load\_configuration()}}
+{\footnotesize\ttfamily def file\+\_\+manager.\+utils.\+load\+\_\+configuration (\begin{DoxyParamCaption}\item[{}]{conf\+\_\+path }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function to load configuration from file
+
+Args:
+    conf_path (str): path to configuration file
+
+Returns:
+    str, set(str), str, set(str): configuration
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacefile__manager_1_1utils_a5a8869ea27c5383c117ac8849ac48d13}\label{namespacefile__manager_1_1utils_a5a8869ea27c5383c117ac8849ac48d13}} 
+\index{file\_manager.utils@{file\_manager.utils}!move\_files\_to\_main\_dir@{move\_files\_to\_main\_dir}}
+\index{move\_files\_to\_main\_dir@{move\_files\_to\_main\_dir}!file\_manager.utils@{file\_manager.utils}}
+\doxysubsubsection{\texorpdfstring{move\_files\_to\_main\_dir()}{move\_files\_to\_main\_dir()}}
+{\footnotesize\ttfamily def file\+\_\+manager.\+utils.\+move\+\_\+files\+\_\+to\+\_\+main\+\_\+dir (\begin{DoxyParamCaption}\item[{}]{main\+\_\+dir\+\_\+path,  }\item[{}]{copy\+\_\+paths }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function to move all files from copy directories (Y1, Y2,...) to main directory
+
+Args:
+    main_dir_path (str): path to main directory
+    copy_paths (list(str)): paths to copy directories
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacefile__manager_1_1utils_ab08a4db8f8688c26b490d55d16e1e653}\label{namespacefile__manager_1_1utils_ab08a4db8f8688c26b490d55d16e1e653}} 
+\index{file\_manager.utils@{file\_manager.utils}!perm\_to\_num@{perm\_to\_num}}
+\index{perm\_to\_num@{perm\_to\_num}!file\_manager.utils@{file\_manager.utils}}
+\doxysubsubsection{\texorpdfstring{perm\_to\_num()}{perm\_to\_num()}}
+{\footnotesize\ttfamily def file\+\_\+manager.\+utils.\+perm\+\_\+to\+\_\+num (\begin{DoxyParamCaption}\item[{}]{perm }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function to convert symbolic permissions (rwxrwxrwx) to numeric permissions in decimal system (511)
+
+Args:
+    perm (str): symbolic permissions
+
+Returns:
+    int: numeric permissions
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacefile__manager_1_1utils_a6af4a413af87930902142d68bf61cfa5}\label{namespacefile__manager_1_1utils_a6af4a413af87930902142d68bf61cfa5}} 
+\index{file\_manager.utils@{file\_manager.utils}!prepare\_files@{prepare\_files}}
+\index{prepare\_files@{prepare\_files}!file\_manager.utils@{file\_manager.utils}}
+\doxysubsubsection{\texorpdfstring{prepare\_files()}{prepare\_files()}}
+{\footnotesize\ttfamily def file\+\_\+manager.\+utils.\+prepare\+\_\+files (\begin{DoxyParamCaption}\item[{}]{path,  }\item[{}]{bad\+\_\+characters,  }\item[{}]{temp\+\_\+extensions,  }\item[{}]{num\+\_\+of\+\_\+copy\+\_\+dirs = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function to prepare testing single-level directory tree
+
+Args:
+    path (str): path to main directory
+    bad_characters (set(str)): wrong characters in names of files
+    temp_extensions (set(str)): temporary extensions of files
+    num_of_copy_dirs (int, optional): Number of copy directories (Y1, Y2...). Defaults to 1.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacefile__manager_1_1utils_a0fa8eba310a486505107ccf991858bb4}\label{namespacefile__manager_1_1utils_a0fa8eba310a486505107ccf991858bb4}} 
+\index{file\_manager.utils@{file\_manager.utils}!prepare\_subfiles@{prepare\_subfiles}}
+\index{prepare\_subfiles@{prepare\_subfiles}!file\_manager.utils@{file\_manager.utils}}
+\doxysubsubsection{\texorpdfstring{prepare\_subfiles()}{prepare\_subfiles()}}
+{\footnotesize\ttfamily def file\+\_\+manager.\+utils.\+prepare\+\_\+subfiles (\begin{DoxyParamCaption}\item[{}]{path,  }\item[{}]{bad\+\_\+characters,  }\item[{}]{temp\+\_\+extensions,  }\item[{}]{num\+\_\+of\+\_\+copy\+\_\+dirs = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function to prepare testing two-level directory tree
+
+Args:
+    path (str): path to main directory
+    bad_characters (set(str)): wrong characters in names of files
+    temp_extensions (set(str)): temporary extensions of files
+    num_of_copy_dirs (int, optional): Number of copy directories (Y1, Y2...). Defaults to 1.
+\end{DoxyVerb}
+ 

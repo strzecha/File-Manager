@@ -1,0 +1,121 @@
+\hypertarget{classfile__manager_1_1changer_1_1_file_changer}{}\doxysection{file\+\_\+manager.\+changer.\+File\+Changer Class Reference}
+\label{classfile__manager_1_1changer_1_1_file_changer}\index{file\_manager.changer.FileChanger@{file\_manager.changer.FileChanger}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classfile__manager_1_1changer_1_1_file_changer_a8937062defe30d584e59c590a32e6c04}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classfile__manager_1_1changer_1_1_file_changer_a2a5fc69fb41b7f751f914a2e508bce08}{permissions}}, \mbox{\hyperlink{classfile__manager_1_1changer_1_1_file_changer_a50029fda6e659c191dcb3eb75cca7525}{substitute\+\_\+of\+\_\+bad\+\_\+char}}, \mbox{\hyperlink{classfile__manager_1_1changer_1_1_file_changer_a3a58c2f2e39953183da3e4e63592ca80}{bad\+\_\+characters}})
+\item 
+def \mbox{\hyperlink{classfile__manager_1_1changer_1_1_file_changer_a9924d7a71e7d021d5ed796d309448b21}{generate\+\_\+correct\+\_\+filename}} (self, filename)
+\item 
+def \mbox{\hyperlink{classfile__manager_1_1changer_1_1_file_changer_a58d92f3b7aa21dee6cb218e17b24530e}{process\+\_\+wrong\+\_\+named\+\_\+file}} (self, filename, ask=True, action=False)
+\item 
+def \mbox{\hyperlink{classfile__manager_1_1changer_1_1_file_changer_ab8f7db7473eddacfb82872a4d4068b75}{process\+\_\+file\+\_\+permissions}} (self, filename, perm, ask=True, action=False)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classfile__manager_1_1changer_1_1_file_changer_a2a5fc69fb41b7f751f914a2e508bce08}{permissions}}
+\item 
+\mbox{\hyperlink{classfile__manager_1_1changer_1_1_file_changer_a50029fda6e659c191dcb3eb75cca7525}{substitute\+\_\+of\+\_\+bad\+\_\+char}}
+\item 
+\mbox{\hyperlink{classfile__manager_1_1changer_1_1_file_changer_a3a58c2f2e39953183da3e4e63592ca80}{bad\+\_\+characters}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}class FileChanger
+
+Class to change attributes of files (permissions and names)
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classfile__manager_1_1changer_1_1_file_changer_a8937062defe30d584e59c590a32e6c04}\label{classfile__manager_1_1changer_1_1_file_changer_a8937062defe30d584e59c590a32e6c04}} 
+\index{file\_manager.changer.FileChanger@{file\_manager.changer.FileChanger}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!file\_manager.changer.FileChanger@{file\_manager.changer.FileChanger}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def file\+\_\+manager.\+changer.\+File\+Changer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{permissions,  }\item[{}]{substitute\+\_\+of\+\_\+bad\+\_\+char,  }\item[{}]{bad\+\_\+characters }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}init method
+
+Args:
+    permissions (str): proposed permissions
+    substitute_of_bad_char (str): substitute of wrong characters in files' names
+    bad_characters (set(str)): wrong characters in files' names
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfile__manager_1_1changer_1_1_file_changer_a9924d7a71e7d021d5ed796d309448b21}\label{classfile__manager_1_1changer_1_1_file_changer_a9924d7a71e7d021d5ed796d309448b21}} 
+\index{file\_manager.changer.FileChanger@{file\_manager.changer.FileChanger}!generate\_correct\_filename@{generate\_correct\_filename}}
+\index{generate\_correct\_filename@{generate\_correct\_filename}!file\_manager.changer.FileChanger@{file\_manager.changer.FileChanger}}
+\doxysubsubsection{\texorpdfstring{generate\_correct\_filename()}{generate\_correct\_filename()}}
+{\footnotesize\ttfamily def file\+\_\+manager.\+changer.\+File\+Changer.\+generate\+\_\+correct\+\_\+filename (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{filename }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Method to generate file name without wrong characters
+
+Args:
+    filename (str): (wrong) name of file
+
+Returns:
+    str: correct name of file
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classfile__manager_1_1changer_1_1_file_changer_ab8f7db7473eddacfb82872a4d4068b75}\label{classfile__manager_1_1changer_1_1_file_changer_ab8f7db7473eddacfb82872a4d4068b75}} 
+\index{file\_manager.changer.FileChanger@{file\_manager.changer.FileChanger}!process\_file\_permissions@{process\_file\_permissions}}
+\index{process\_file\_permissions@{process\_file\_permissions}!file\_manager.changer.FileChanger@{file\_manager.changer.FileChanger}}
+\doxysubsubsection{\texorpdfstring{process\_file\_permissions()}{process\_file\_permissions()}}
+{\footnotesize\ttfamily def file\+\_\+manager.\+changer.\+File\+Changer.\+process\+\_\+file\+\_\+permissions (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{filename,  }\item[{}]{perm,  }\item[{}]{ask = {\ttfamily True},  }\item[{}]{action = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Method to ask (or not) user and process wrong permissions of file
+
+Args:
+    filename (str): name of file
+    perm (str): permissions of file
+    ask (bool, optional): whether to ask the user for an action. Defaults to True.
+    action (bool, optional): action to prepare (True - keep, False - change permissions). Defaults to False.
+
+Returns:
+    bool: whether the permissions were changed or not
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classfile__manager_1_1changer_1_1_file_changer_a58d92f3b7aa21dee6cb218e17b24530e}\label{classfile__manager_1_1changer_1_1_file_changer_a58d92f3b7aa21dee6cb218e17b24530e}} 
+\index{file\_manager.changer.FileChanger@{file\_manager.changer.FileChanger}!process\_wrong\_named\_file@{process\_wrong\_named\_file}}
+\index{process\_wrong\_named\_file@{process\_wrong\_named\_file}!file\_manager.changer.FileChanger@{file\_manager.changer.FileChanger}}
+\doxysubsubsection{\texorpdfstring{process\_wrong\_named\_file()}{process\_wrong\_named\_file()}}
+{\footnotesize\ttfamily def file\+\_\+manager.\+changer.\+File\+Changer.\+process\+\_\+wrong\+\_\+named\+\_\+file (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{filename,  }\item[{}]{ask = {\ttfamily True},  }\item[{}]{action = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Method to ask (or not) user and process wrong named file 
+
+Args:
+    filename (str): name of file
+    ask (bool, optional): whether to ask the user for an action. Defaults to True.
+    action (bool, optional): action to prepare (True - keep, False - rename). Defaults to False.
+
+Returns:
+    str: processed name of file
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classfile__manager_1_1changer_1_1_file_changer_a3a58c2f2e39953183da3e4e63592ca80}\label{classfile__manager_1_1changer_1_1_file_changer_a3a58c2f2e39953183da3e4e63592ca80}} 
+\index{file\_manager.changer.FileChanger@{file\_manager.changer.FileChanger}!bad\_characters@{bad\_characters}}
+\index{bad\_characters@{bad\_characters}!file\_manager.changer.FileChanger@{file\_manager.changer.FileChanger}}
+\doxysubsubsection{\texorpdfstring{bad\_characters}{bad\_characters}}
+{\footnotesize\ttfamily file\+\_\+manager.\+changer.\+File\+Changer.\+bad\+\_\+characters}
+
+\mbox{\Hypertarget{classfile__manager_1_1changer_1_1_file_changer_a2a5fc69fb41b7f751f914a2e508bce08}\label{classfile__manager_1_1changer_1_1_file_changer_a2a5fc69fb41b7f751f914a2e508bce08}} 
+\index{file\_manager.changer.FileChanger@{file\_manager.changer.FileChanger}!permissions@{permissions}}
+\index{permissions@{permissions}!file\_manager.changer.FileChanger@{file\_manager.changer.FileChanger}}
+\doxysubsubsection{\texorpdfstring{permissions}{permissions}}
+{\footnotesize\ttfamily file\+\_\+manager.\+changer.\+File\+Changer.\+permissions}
+
+\mbox{\Hypertarget{classfile__manager_1_1changer_1_1_file_changer_a50029fda6e659c191dcb3eb75cca7525}\label{classfile__manager_1_1changer_1_1_file_changer_a50029fda6e659c191dcb3eb75cca7525}} 
+\index{file\_manager.changer.FileChanger@{file\_manager.changer.FileChanger}!substitute\_of\_bad\_char@{substitute\_of\_bad\_char}}
+\index{substitute\_of\_bad\_char@{substitute\_of\_bad\_char}!file\_manager.changer.FileChanger@{file\_manager.changer.FileChanger}}
+\doxysubsubsection{\texorpdfstring{substitute\_of\_bad\_char}{substitute\_of\_bad\_char}}
+{\footnotesize\ttfamily file\+\_\+manager.\+changer.\+File\+Changer.\+substitute\+\_\+of\+\_\+bad\+\_\+char}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+file\+\_\+manager/\mbox{\hyperlink{changer_8py}{changer.\+py}}\end{DoxyCompactItemize}

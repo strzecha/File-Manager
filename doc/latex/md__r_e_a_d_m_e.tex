@@ -1,0 +1,57 @@
+Project for subject \char`\"{}\+ASU\char`\"{}\+: Warsaw University of Technology
+
+Program do porządkowania plików w systemie Linux. Ma on za zadanie przeszukać główny katalog X razem z jego podkatalogami, oraz inne katalogi Y1, Y2, ... wraz z ich podkatalogami (o podobnej strukturze), a następnie uporządkować te katalogi w następujący sposób\+:
+\begin{DoxyItemize}
+\item w katalogu X znalazły się wszystkie pliki,
+\item zlikwidować duplikaty czyli sposród plików o identycznej zawartości zasugerować pozostawienie tylko najstarszego (nowsze daty są zapewne datami utworzenia kopii),
+\item zaproponować skasowanie plików pustych i tymczasowych,
+\item w przypadku plików o tej samej nazwie zasugerować pozostawienie nowszego,
+\item zasugerować ujednolicenie atrybutów np. rw-\/r–r–,
+\item zasugerować przemianowanie plików, których nazwy zawierają znaki mogące komplikować operowanie nimi (np. ’\+:’, ’”’, ’.\+’, ’;’, ’$\ast$’, ’?’, ’\$’, ’\+::’, ’‘’, ’$\vert$’, ’\textbackslash{}’, ...) zastępując te znaki zdefiniowanym substytutem np. \+\_\+
+\end{DoxyItemize}
+
+Program potrafi wyszukiwać\+:
+\begin{DoxyItemize}
+\item pliki o identycznej zawartości (choć niekoniecznie identycznej nazwie i niekonieczne w analogicznej pozycji w drzewie),
+\item pliki puste,
+\item pliki tymczasowe ($\ast$˜, $\ast$.tmp oraz inne rozszerzenia zdefiniowane przez użytkownika),
+\item pliki o atrybutach innych niż zdefiniowane przez użytkownika,
+\item pliki o nazwach zawierających kłopotliwe znaki.
+\end{DoxyItemize}
+
+Dla każdego znalezionego pliku program proponuje odpowiednią akcję\+:
+\begin{DoxyItemize}
+\item skasowanie duplikatu, pliku pustego lub tymczasowego,
+\item zastąpienie starszej wersji nowszą (w przypadku plików z identyczną zawartością),
+\item zastapienie wersji nowszej starszą (w przypadku plików z identyczną zawartością),
+\item zmianę atrybutów,
+\item zmianę nazwy,
+\item pozostawienie bez zmian
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md1}{}\doxysection{Uruchomienie}\label{md__r_e_a_d_m_e_autotoc_md1}
+Aby uruchomić program należy mieć zainstalowanego Pythona w wersji 3.\+10 i za jego pomocą uruchomić skrypt \mbox{\hyperlink{main_8py}{main.\+py}} z następującymi parametrami 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{main.py [-\/-\/temp\_del] [-\/-\/temp\_keep] [-\/-\/empty\_del] [-\/-\/empty\_keep] [-\/-\/bad\_change] [-\/-\/bad\_keep] [-\/-\/perm\_change] [-\/-\/perm\_keep] [-\/-\/same\_action \{old,new,none\}] main\_path [copy\_paths ...]}
+\DoxyCodeLine{}
+\DoxyCodeLine{gdzie:}
+\DoxyCodeLine{}
+\DoxyCodeLine{main\_path oznacza ścieżkę do folderu, w którym mają znaleźć się wszystkie pliki (korzeń głównego katalogu plików)}
+\DoxyCodeLine{copy\_paths to ścieżki do folderów, które program ma przeszukać dodatkowo (i w razie potrzeby przenieść z nich pliki do katalogu głównego)}
+\DoxyCodeLine{-\/-\/temp\_del włącza permanentne usuwanie plików tymczasowych (bez pytania o zgodę użytkownika)}
+\DoxyCodeLine{-\/-\/temp\_keep włącza permanentne zachowywanie plików tymczasowych (bez pytania o zgodę użytkownika)}
+\DoxyCodeLine{-\/-\/empty\_del włącza permanentne usuwanie plików pustych (bez pytania o zgodę użytkownika)}
+\DoxyCodeLine{-\/-\/empty\_keep włącza permanentne zachowywanie plików pustych (bez pytania o zgodę użytkownika)}
+\DoxyCodeLine{-\/-\/bad\_change włącza permanentne zmienianie kłopotliwych nazw plików (bez pytania o zgodę użytkownika)}
+\DoxyCodeLine{-\/-\/bad\_keep włącza permanentne zachowywanie kłopotliwych nazw plików (bez pytania o zgodę użytkownika)}
+\DoxyCodeLine{-\/-\/perm\_change włącza permanentne zmienianie kłopotliwych atrybutów plików (bez pytania o zgodę użytkownika)}
+\DoxyCodeLine{-\/-\/perm\_keep włącza permanentne zachowywanie kłopotliwych atrybutów plików (bez pytania o zgodę użytkownika)}
+\DoxyCodeLine{-\/-\/same\_action oznacza akcję wykonywaną podczas znalezienia dwóch plików o takiej samej zawartości (old -\/ usunięcie starszego, new -\/ usunięcie nowszego, none -\/ zachowanie obu)}
+
+\end{DoxyCode}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md2}{}\doxysection{Konfiguracja}\label{md__r_e_a_d_m_e_autotoc_md2}
+W pliku config/clean\+\_\+files znajduje się modyfikowalna konfiguracja programu tj.\+:
+\begin{DoxyItemize}
+\item permissions\+: sugerowana wartość atrybutów plików
+\item bad-\/characters\+: kłopotliwe znaki w nazwach plików
+\item substitute\+: substytut znaków kłopotliwych
+\item temporary-\/extensions\+: dodatkowe (do standardowych $\ast$.tmp i $\ast$$\sim$) rozszerzenia plików uznawanych tymczasowych 
+\end{DoxyItemize}

@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['test_5fchange_5fbad_5ffiles_5fpermissions_172',['test_change_bad_files_permissions',['../namespacetests_1_1test__manager.html#a1eccb28d4de2002a9994f49f4c90dfbf',1,'tests::test_manager']]],
+  ['test_5fmanage_5ffiles_173',['test_manage_files',['../namespacetests_1_1test__manager.html#ab951b9b4a0e2a0c6a35057b30bcf5b49',1,'tests::test_manager']]],
+  ['test_5fmanage_5ffiles2_174',['test_manage_files2',['../namespacetests_1_1test__manager.html#ac56636d526c76ea724bceed365b9c288',1,'tests::test_manager']]],
+  ['test_5fmanage_5ffiles3_175',['test_manage_files3',['../namespacetests_1_1test__manager.html#a2ce74cc80b90a4004e28819cc25e868e',1,'tests::test_manager']]],
+  ['test_5fmanager_176',['test_manager',['../namespacetests_1_1test__manager.html#a46a86a4f8f654c02fc56de1f53bad6ca',1,'tests::test_manager']]],
+  ['test_5fperm_5fto_5fnum_177',['test_perm_to_num',['../namespacetests_1_1test__utils.html#a973d8b902470e5046963dec5f6be75ef',1,'tests::test_utils']]],
+  ['test_5fprocess_5fempty_5ffile_178',['test_process_empty_file',['../namespacetests_1_1test__remover.html#a55549822cf745355f74de561b862eebd',1,'tests::test_remover']]],
+  ['test_5fprocess_5fempty_5ffile_5fuser_5fdecision_179',['test_process_empty_file_user_decision',['../namespacetests_1_1test__remover.html#a1ecdd09c8dbc037652d08ba71179c2fb',1,'tests::test_remover']]],
+  ['test_5fprocess_5ffile_5fpermissions_180',['test_process_file_permissions',['../namespacetests_1_1test__changer.html#a01ed24470341dae0e0df03f53ea558d2',1,'tests::test_changer']]],
+  ['test_5fprocess_5ffile_5fpermissions_5fuser_5fdecision_181',['test_process_file_permissions_user_decision',['../namespacetests_1_1test__changer.html#a42ba8a4bf477257db33b536ce071f802',1,'tests::test_changer']]],
+  ['test_5fprocess_5fgroup_5fof_5ffilenames_5fby_5fsize_182',['test_process_group_of_filenames_by_size',['../namespacetests_1_1test__remover.html#aa31d9c0e513928198f9e63de2f5588fd',1,'tests::test_remover']]],
+  ['test_5fprocess_5ftemporary_5ffile_183',['test_process_temporary_file',['../namespacetests_1_1test__remover.html#a799e36c713b614bec20240ce38b63ce9',1,'tests::test_remover']]],
+  ['test_5fprocess_5ftemporary_5ffile_5fuser_5fdecision_184',['test_process_temporary_file_user_decision',['../namespacetests_1_1test__remover.html#acb35d5e3ae57aa2c5c089a2207219298',1,'tests::test_remover']]],
+  ['test_5fprocess_5fwrong_5fnamed_5ffile_185',['test_process_wrong_named_file',['../namespacetests_1_1test__changer.html#a12f372afc1708b5c9a3052e93095de2f',1,'tests::test_changer']]],
+  ['test_5fprocess_5fwrong_5fnamed_5ffile_5fuser_5fdecision_186',['test_process_wrong_named_file_user_decision',['../namespacetests_1_1test__changer.html#a51b443442db603f7a00029e5278e020a',1,'tests::test_changer']]],
+  ['test_5fremove_5fduplicate_5ffiles_187',['test_remove_duplicate_files',['../namespacetests_1_1test__manager.html#a9b007a31a1e1aa7a0f80308f811036cc',1,'tests::test_manager']]],
+  ['test_5fremove_5fempty_5ffiles_188',['test_remove_empty_files',['../namespacetests_1_1test__manager.html#af6f16e02b23448f81ff13e4acb27abd2',1,'tests::test_manager']]],
+  ['test_5fremove_5ftemporary_5ffiles_189',['test_remove_temporary_files',['../namespacetests_1_1test__manager.html#a9703d030850c9537d66ae0d920c19c86',1,'tests::test_manager']]],
+  ['test_5frename_5fwrong_5fnamed_5ffiles_190',['test_rename_wrong_named_files',['../namespacetests_1_1test__manager.html#af9534071a9d70683de8f6faf7b511128',1,'tests::test_manager']]]
+];

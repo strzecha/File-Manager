@@ -1,0 +1,143 @@
+\hypertarget{classfile__manager_1_1remover_1_1_file_remover}{}\doxysection{file\+\_\+manager.\+remover.\+File\+Remover Class Reference}
+\label{classfile__manager_1_1remover_1_1_file_remover}\index{file\_manager.remover.FileRemover@{file\_manager.remover.FileRemover}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classfile__manager_1_1remover_1_1_file_remover_a62f1d578daf28fffc40c2a913ce7de6e}{remove\+\_\+file}} (self, filename, output=True)
+\item 
+def \mbox{\hyperlink{classfile__manager_1_1remover_1_1_file_remover_ace5427a11de9e91a29245383c83a1a73}{keep\+\_\+file}} (self, filename, output=False)
+\item 
+def \mbox{\hyperlink{classfile__manager_1_1remover_1_1_file_remover_ac1b71b2b748d865a107f4aeebb0e3a0c}{ask\+\_\+to\+\_\+remove}} (self, filename, ask, action)
+\item 
+def \mbox{\hyperlink{classfile__manager_1_1remover_1_1_file_remover_a34987109ef65125f2379ba2b8b16016d}{process\+\_\+empty\+\_\+file}} (self, filename, ask=True, action=False)
+\item 
+def \mbox{\hyperlink{classfile__manager_1_1remover_1_1_file_remover_a6110811f1d48635b9bb7dab590f76f6b}{process\+\_\+temporary\+\_\+file}} (self, filename, ask=True, action=False)
+\item 
+def \mbox{\hyperlink{classfile__manager_1_1remover_1_1_file_remover_a8a9dfe6b71b367dc7c8bd0c176b35f0d}{process\+\_\+duplicate\+\_\+files}} (self, filename1, filename2, action=None)
+\item 
+def \mbox{\hyperlink{classfile__manager_1_1remover_1_1_file_remover_ab9f87c5b496570ed4577e5a5cc11f85f}{process\+\_\+group\+\_\+of\+\_\+filenames\+\_\+by\+\_\+size}} (self, filenames, action=\char`\"{}none\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}class FileRemover
+
+Class to remove empty, temporary or duplicated files
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfile__manager_1_1remover_1_1_file_remover_ac1b71b2b748d865a107f4aeebb0e3a0c}\label{classfile__manager_1_1remover_1_1_file_remover_ac1b71b2b748d865a107f4aeebb0e3a0c}} 
+\index{file\_manager.remover.FileRemover@{file\_manager.remover.FileRemover}!ask\_to\_remove@{ask\_to\_remove}}
+\index{ask\_to\_remove@{ask\_to\_remove}!file\_manager.remover.FileRemover@{file\_manager.remover.FileRemover}}
+\doxysubsubsection{\texorpdfstring{ask\_to\_remove()}{ask\_to\_remove()}}
+{\footnotesize\ttfamily def file\+\_\+manager.\+remover.\+File\+Remover.\+ask\+\_\+to\+\_\+remove (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{filename,  }\item[{}]{ask,  }\item[{}]{action }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Method to ask to remove file and perform chosen operation
+
+Args:
+    filename (str): name of file
+    ask (bool): whether to ask the user for an action
+    action (bool): action to prepare (True - keep, False - remove)
+
+Returns:
+    bool: result of removing
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classfile__manager_1_1remover_1_1_file_remover_ace5427a11de9e91a29245383c83a1a73}\label{classfile__manager_1_1remover_1_1_file_remover_ace5427a11de9e91a29245383c83a1a73}} 
+\index{file\_manager.remover.FileRemover@{file\_manager.remover.FileRemover}!keep\_file@{keep\_file}}
+\index{keep\_file@{keep\_file}!file\_manager.remover.FileRemover@{file\_manager.remover.FileRemover}}
+\doxysubsubsection{\texorpdfstring{keep\_file()}{keep\_file()}}
+{\footnotesize\ttfamily def file\+\_\+manager.\+remover.\+File\+Remover.\+keep\+\_\+file (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{filename,  }\item[{}]{output = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Method to print message about keeping file
+
+Args:
+    filename (str): name of file
+    output (bool, optional): result of removing file. Defaults to Faldr.
+
+Returns:
+    bool: result of removing file
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classfile__manager_1_1remover_1_1_file_remover_a8a9dfe6b71b367dc7c8bd0c176b35f0d}\label{classfile__manager_1_1remover_1_1_file_remover_a8a9dfe6b71b367dc7c8bd0c176b35f0d}} 
+\index{file\_manager.remover.FileRemover@{file\_manager.remover.FileRemover}!process\_duplicate\_files@{process\_duplicate\_files}}
+\index{process\_duplicate\_files@{process\_duplicate\_files}!file\_manager.remover.FileRemover@{file\_manager.remover.FileRemover}}
+\doxysubsubsection{\texorpdfstring{process\_duplicate\_files()}{process\_duplicate\_files()}}
+{\footnotesize\ttfamily def file\+\_\+manager.\+remover.\+File\+Remover.\+process\+\_\+duplicate\+\_\+files (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{filename1,  }\item[{}]{filename2,  }\item[{}]{action = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Method to process duplicated files
+
+Args:
+    filename1 (str): name of first file
+    filename2 (str): name of second file
+    action (str): action to prepare ("new" - remove newer file, "old" - remove older file, "none" - keep both files)
+
+Returns:
+    str: name of removed file
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classfile__manager_1_1remover_1_1_file_remover_a34987109ef65125f2379ba2b8b16016d}\label{classfile__manager_1_1remover_1_1_file_remover_a34987109ef65125f2379ba2b8b16016d}} 
+\index{file\_manager.remover.FileRemover@{file\_manager.remover.FileRemover}!process\_empty\_file@{process\_empty\_file}}
+\index{process\_empty\_file@{process\_empty\_file}!file\_manager.remover.FileRemover@{file\_manager.remover.FileRemover}}
+\doxysubsubsection{\texorpdfstring{process\_empty\_file()}{process\_empty\_file()}}
+{\footnotesize\ttfamily def file\+\_\+manager.\+remover.\+File\+Remover.\+process\+\_\+empty\+\_\+file (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{filename,  }\item[{}]{ask = {\ttfamily True},  }\item[{}]{action = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Method to process empty file
+
+Args:
+    filename (str): name of file
+    ask (bool): whether to ask the user for an action
+    action (bool): action to prepare (True - keep, False - remove)
+
+Returns:
+    bool: result of removing
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classfile__manager_1_1remover_1_1_file_remover_ab9f87c5b496570ed4577e5a5cc11f85f}\label{classfile__manager_1_1remover_1_1_file_remover_ab9f87c5b496570ed4577e5a5cc11f85f}} 
+\index{file\_manager.remover.FileRemover@{file\_manager.remover.FileRemover}!process\_group\_of\_filenames\_by\_size@{process\_group\_of\_filenames\_by\_size}}
+\index{process\_group\_of\_filenames\_by\_size@{process\_group\_of\_filenames\_by\_size}!file\_manager.remover.FileRemover@{file\_manager.remover.FileRemover}}
+\doxysubsubsection{\texorpdfstring{process\_group\_of\_filenames\_by\_size()}{process\_group\_of\_filenames\_by\_size()}}
+{\footnotesize\ttfamily def file\+\_\+manager.\+remover.\+File\+Remover.\+process\+\_\+group\+\_\+of\+\_\+filenames\+\_\+by\+\_\+size (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{filenames,  }\item[{}]{action = {\ttfamily \char`\"{}none\char`\"{}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Method to process group of filenames to find and remove duplicated files
+
+Args:
+    filenames (list(str)): list of files' names
+    action (str, optional): action to prepare ("new" - remove newer file, "old" - remove older file, "none" - keep both files). Defaults to "none".
+
+Returns:
+    list(str): list of names of removed files
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classfile__manager_1_1remover_1_1_file_remover_a6110811f1d48635b9bb7dab590f76f6b}\label{classfile__manager_1_1remover_1_1_file_remover_a6110811f1d48635b9bb7dab590f76f6b}} 
+\index{file\_manager.remover.FileRemover@{file\_manager.remover.FileRemover}!process\_temporary\_file@{process\_temporary\_file}}
+\index{process\_temporary\_file@{process\_temporary\_file}!file\_manager.remover.FileRemover@{file\_manager.remover.FileRemover}}
+\doxysubsubsection{\texorpdfstring{process\_temporary\_file()}{process\_temporary\_file()}}
+{\footnotesize\ttfamily def file\+\_\+manager.\+remover.\+File\+Remover.\+process\+\_\+temporary\+\_\+file (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{filename,  }\item[{}]{ask = {\ttfamily True},  }\item[{}]{action = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Method to process temporary file
+
+Args:
+    filename (str): name of file
+    ask (bool): whether to ask the user for an action
+    action (bool): action to prepare (True - keep, False - remove)
+
+Returns:
+    bool: result of removing
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classfile__manager_1_1remover_1_1_file_remover_a62f1d578daf28fffc40c2a913ce7de6e}\label{classfile__manager_1_1remover_1_1_file_remover_a62f1d578daf28fffc40c2a913ce7de6e}} 
+\index{file\_manager.remover.FileRemover@{file\_manager.remover.FileRemover}!remove\_file@{remove\_file}}
+\index{remove\_file@{remove\_file}!file\_manager.remover.FileRemover@{file\_manager.remover.FileRemover}}
+\doxysubsubsection{\texorpdfstring{remove\_file()}{remove\_file()}}
+{\footnotesize\ttfamily def file\+\_\+manager.\+remover.\+File\+Remover.\+remove\+\_\+file (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{filename,  }\item[{}]{output = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Method to remove file and print message
+
+Args:
+    filename (str): name of file
+    output (bool or str, optional): result (True of False) of removing or name of removed file. Defaults to True.
+
+Returns:
+    bool or str: result (True of False) of removing or name of removed file
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+file\+\_\+manager/\mbox{\hyperlink{remover_8py}{remover.\+py}}\end{DoxyCompactItemize}
