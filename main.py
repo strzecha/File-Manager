@@ -1,9 +1,13 @@
+"""script main
+
+Main script to run program
+"""
 import argparse
 
 from file_manager.manager import FileManager
 from file_manager.utils import get_all_files, move_files_to_main_dir
 
-conf_path = "doc/clean_files"
+conf_path = "config/clean_files"
 
 def main():
     # parsing arguments

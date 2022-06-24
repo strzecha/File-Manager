@@ -1,3 +1,7 @@
+"""script prepare
+
+Script to prepare testing two-level directory tree
+"""
 from utils import load_configuration, prepare_subfiles
 from sys import argv
 

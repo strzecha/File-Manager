@@ -13,9 +13,8 @@ Program do porządkowania plików w systemie Linux. Ma on za zadanie przeszukać
 Program potrafi wyszukiwać:
 - pliki o identycznej zawartości (choć niekoniecznie identycznej nazwie i niekonieczne w analogicznej pozycji w drzewie),
 - pliki puste,
-- nowsze wersje plików o tej samej nazwie (choć niekoniecznie znajdujące się w analogicznym katalogu),
-- pliki tymczasowe (*˜, *.tmp, ew. inne rozszerzenia zdefiniowane przez użytkownika),
-- pliki o nietypwych atrybutach np. rwxrwxrwx,
+- pliki tymczasowe (*˜, *.tmp oraz inne rozszerzenia zdefiniowane przez użytkownika),
+- pliki o atrybutach innych niż zdefiniowane przez użytkownika,
 - pliki o nazwach zawierających kłopotliwe znaki.
 
 Dla każdego znalezionego pliku program proponuje odpowiednią akcję:
@@ -48,7 +47,7 @@ copy_paths to ścieżki do folderów, które program ma przeszukać dodatkowo (i
 ```
 
 ## Konfiguracja
-W pliku doc/clean_files znajduje się modyfikowalna konfiguracja programu tj.:
+W pliku config/clean_files znajduje się modyfikowalna konfiguracja programu tj.:
 - permissions: sugerowana wartość atrybutów plików
 - bad-characters: kłopotliwe znaki w nazwach plików
 - substitute: substytut znaków kłopotliwych
